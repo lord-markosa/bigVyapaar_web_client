@@ -1,0 +1,37 @@
+@import "../utils/styleConstants.scss";
+
+.trade-card {
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+
+    .trade-header {
+        display: flex;
+        // flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 12px;
+    }
+
+    .trade-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 12px;
+
+        .info-sub {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .trade-actions {
+            button {
+                @include button-primary;
+                margin-top: 4px;
+            }
+        }
+    }
+}

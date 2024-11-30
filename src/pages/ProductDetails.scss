@@ -1,0 +1,58 @@
+@import "../utils/styleConstants.scss";
+
+.root {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8px;
+    border-bottom: #333 1px solid;
+    margin-bottom: 8px;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.first-column-content {
+    margin-bottom: 8px;
+}
+
+.text-styles {
+    font-size: 16px;
+    color: #333;
+}
+
+.time-stamp {
+    font-size: 14px;
+    color: #666;
+}
+
+.trade-header {
+    font-size: 18px;
+}
+
+.price-container {
+    margin-top: 8px;
+}
+
+.buttons-container {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    left: 4px;
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+    button {
+        flex: 1;
+        @include button-primary;
+    }
+}

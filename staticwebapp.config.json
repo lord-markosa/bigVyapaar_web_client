@@ -1,0 +1,16 @@
+{
+    "trailingSlash": "auto",
+    "routes": [
+        { "route": "/login" },
+        { "route": "/register" },
+        { "route": "/chat/:id" },
+        { "route": "/product-form" },
+        { "route": "/" },
+        { "route": "/home" },
+        { "route": "/*" }
+    ],
+    "navigationFallback": {
+        "rewrite": "/index.html",
+        "exclude": ["/static/*"]
+    }
+}

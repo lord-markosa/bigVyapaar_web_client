@@ -1,0 +1,41 @@
+@import "../utils/styleConstants.scss";
+
+.login-form {
+    @include form-primary;
+
+    .welcome-title {
+        @include title;
+    }
+
+    .login-input {
+        @include input-textbox;
+    }
+
+    .login-button {
+        @include button-primary;
+    }
+    .register-text {
+        margin-top: 20px;
+        font-size: 1rem;
+
+        button {
+            @include button-transparent;
+        }
+    }
+    .error {
+        color: rgb(255, 124, 124);
+        font-size: 1rem;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-title {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+}

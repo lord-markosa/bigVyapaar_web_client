@@ -1,0 +1,12 @@
+@import "../utils/styleConstants.scss";
+
+.chatListItem {
+    display: flex;
+    border-radius: 10px;
+    align-items: start;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px $grey-100;
+    padding: 8px;
+    margin-bottom: 4px;
+}

@@ -1,0 +1,34 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0;
+    .list-view {
+        flex: 1;
+        margin: 4px 8px;
+    }
+}
+
+.tab-navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+
+    button {
+        flex: 1;
+        padding: 15px;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &.active {
+            background-color: #4caf50;
+            color: white;
+        }
+    }
+}

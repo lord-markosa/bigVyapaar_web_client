@@ -1,0 +1,22 @@
+@import "../utils/styleConstants.scss";
+
+.spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.loading-spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-top: 8px solid $theme-color;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    &.small {
+        border-width: 4px;
+        width: 20px;
+        height: 20px;
+    }
+}

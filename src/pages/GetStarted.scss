@@ -1,0 +1,106 @@
+@import "../utils/styleConstants.scss";
+
+.get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+
+    .header-image {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 3rem;
+        margin: 10px 0 8px;
+        font-family: $title-font;
+        color: $theme-color;
+    }
+
+    .tagline {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: $grey-500;
+        font-family: $subtitle-font;
+    }
+
+    .carousel {
+        padding: 10px 0;
+        border-radius: 10px;
+        max-width: 600px;
+        width: 100%;
+        font-family: $subtitle-font;
+        .description {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            min-height: 120px;
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+
+            .dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $grey-200;
+                margin: 0 5px;
+                transition: background-color 0.3s;
+
+                &.active {
+                    background-color: $theme-color-dark;
+                }
+            }
+        }
+
+        .carousel-controls {
+            display: flex;
+            justify-content: space-between;
+            button {
+                padding: 10px 20px;
+                font-size: 1rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                font-family: inherit;
+
+                &.skip-button {
+                    background-color: $grey-300;
+                    color: white;
+                }
+
+                &.next-button {
+                    background-color: $theme-color-dark;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .title {
+            font-size: 2rem;
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+        }
+
+        .carousel {
+            .carousel-controls {
+                button {
+                    font-size: 1rem;
+                    padding: 8px 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.product-form {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 20px;
+    flex: 1;
+    width: 100%;
+
+    .title {
+        text-align: center;
+        font-size: 2rem;
+        margin: 10px 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #6495ed;
+    }
+
+    .post-form {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin: 0 12px;
+
+        .content-textarea {
+            flex-grow: 1;
+            margin-bottom: 12px;
+            padding: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            resize: none;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-between;
+
+            .post-button,
+            .cancel-button {
+                flex: 1;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+                margin: 0 5px;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            .post-button {
+                background-color: #417ded;
+                color: #fff;
+            }
+
+            .cancel-button {
+                background-color: #d5d5d5;
+                color: #333;
+            }
+        }
+    }
+}

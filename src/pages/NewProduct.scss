@@ -1,0 +1,46 @@
+@import "../utils/styleConstants.scss";
+
+.product-form-page {
+    @include form-primary;
+
+    .title {
+        @include title;
+    }
+
+    .inputContainer {
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label {
+        @include input-label;
+    }
+
+    .input {
+        @include input-textbox;
+    }
+
+    .create-button {
+        @include button-primary;
+    }
+
+    .cancel-text {
+        color: #6495ed;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #4b7cd9;
+            cursor: pointer;
+        }
+    }
+
+    .error {
+        color: rgb(255, 124, 124);
+        font-size: 1rem;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

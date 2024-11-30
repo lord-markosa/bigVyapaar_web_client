@@ -1,0 +1,26 @@
+@import "../utils/styleConstants.scss";
+
+.form-container {
+    @include form-primary;
+    margin: 0;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+
+    label {
+        @include input-label;
+    }
+
+    input {
+        @include input-textbox;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: flex-end;
+        button {
+            @include button-transparent;
+        }
+    }
+}

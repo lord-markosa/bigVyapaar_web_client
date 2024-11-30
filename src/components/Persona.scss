@@ -1,0 +1,28 @@
+@import "../utils//styleConstants.scss";
+
+.persona {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .persona-info {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        .persona-title {
+            font-weight: 400;
+            font-size: 1.2rem;
+            font-family: $subtitle-font;
+        }
+
+        .persona-subtitle {
+            font-size: 0.8rem;
+            color: $grey-600;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+    }
+}

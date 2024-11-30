@@ -1,0 +1,26 @@
+@import "../utils/styleConstants.scss";
+
+.trade-form-page {
+    @include form-primary;
+
+    .title {
+        @include title;
+    }
+
+    input {
+        @include input-textbox;
+    }
+
+    label {
+        @include input-label;
+    }
+
+    .submit-button {
+        @include button-primary;
+    }
+
+    .error {
+        color: red;
+        font-size: 12px;
+    }
+}
